@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <style>
+      .bg { fill: #0b1017; }
+      .panel { fill: #121b26; stroke: #2c3b4c; stroke-width: 3; }
+      .title { fill: #f7fbff; font-family: Arial, Helvetica, sans-serif; font-weight: 800; }
+      .text { fill: #d7e0ea; font-family: Arial, Helvetica, sans-serif; font-weight: 600; }
+      .small { fill: #93a4b7; font-family: Arial, Helvetica, sans-serif; font-weight: 600; }
+      .pin { fill: #1e2b3b; stroke: #52667c; stroke-width: 2; }
+      .pinText { fill: #f7fbff; font-family: Consolas, monospace; font-size: 22px; font-weight: 700; }
+      .wireText { fill: #f7fbff; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 800; }
+      .note { fill: #ffcf5a; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 800; }
+      .danger { fill: #ff6b5f; font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 900; }
+      .cyan { stroke: #00e5ff; }
+      .yellow { stroke: #ffe100; }
+      .orange { stroke: #ff9800; }
+      .green { stroke: #00e51b; }
+      .red { stroke: #ff5252; }
+      .gray { stroke: #aab4bd; }
+      .blue { stroke: #6ab7ff; }
+      .wire { fill: none; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke-width: 4; }
+    </style>
+    <marker id="dotCyan" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="4" fill="#00e5ff"/>
+    </marker>
+    <marker id="dotYellow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="4" fill="#ffe100"/>
+    </marker>
+    <marker id="dotOrange" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="4" fill="#ff9800"/>
+    </marker>
+    <marker id="dotGreen" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="4" fill="#00e51b"/>
+    </marker>
+    <marker id="dotRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="4" fill="#ff5252"/>
+    </marker>
+    <marker id="dotGray" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+      <circle cx="5" cy="5" r="4" fill="#aab4bd"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <text x="70" y="72" class="title" font-size="42">Telugu experiments - ESP32 PZEM-004T Power Meter</text>
+  <text x="72" y="110" class="small" font-size="22">Voltage, Current, Watts and kWh Units on TFT Display + Local Mobile Web Page</text>
+
+  <!-- ESP32 -->
+  <rect x="610" y="190" width="380" height="600" rx="28" class="panel"/>
+  <rect x="690" y="220" width="220" height="72" rx="18" fill="#1d3246" stroke="#3f5369" stroke-width="3"/>
+  <text x="742" y="266" class="title" font-size="34">ESP32</text>
+  <rect x="740" y="315" width="120" height="62" rx="10" fill="#22354a" stroke="#00e5ff" stroke-width="3"/>
+  <text x="765" y="354" class="small" font-size="20">USB</text>
+  <rect x="700" y="410" width="200" height="180" rx="20" fill="#172331" stroke="#33475a" stroke-width="3"/>
+  <text x="750" y="510" class="small" font-size="24">WiFi AP</text>
+  <text x="693" y="620" class="note">192.168.4.1</text>
+
+  <!-- ESP32 pins left -->
+  <rect x="582" y="250" width="100" height="34" rx="8" class="pin"/><text x="603" y="274" class="pinText">3V3</text>
+  <rect x="582" y="300" width="100" height="34" rx="8" class="pin"/><text x="605" y="324" class="pinText">GND</text>
+  <rect x="582" y="350" width="100" height="34" rx="8" class="pin"/><text x="596" y="374" class="pinText">GPIO5</text>
+  <rect x="582" y="400" width="100" height="34" rx="8" class="pin"/><text x="591" y="424" class="pinText">GPIO21</text>
+  <rect x="582" y="450" width="100" height="34" rx="8" class="pin"/><text x="591" y="474" class="pinText">GPIO22</text>
+  <rect x="582" y="500" width="100" height="34" rx="8" class="pin"/><text x="591" y="524" class="pinText">GPIO18</text>
+  <rect x="582" y="550" width="100" height="34" rx="8" class="pin"/><text x="591" y="574" class="pinText">GPIO23</text>
+  <rect x="582" y="600" width="100" height="34" rx="8" class="pin"/><text x="591" y="624" class="pinText">GPIO32</text>
+
+  <!-- ESP32 pins right -->
+  <rect x="918" y="300" width="100" height="34" rx="8" class="pin"/><text x="941" y="324" class="pinText">5V</text>
+  <rect x="918" y="350" width="100" height="34" rx="8" class="pin"/><text x="941" y="374" class="pinText">GND</text>
+  <rect x="918" y="400" width="100" height="34" rx="8" class="pin"/><text x="927" y="424" class="pinText">GPIO16</text>
+  <rect x="918" y="450" width="100" height="34" rx="8" class="pin"/><text x="927" y="474" class="pinText">GPIO17</text>
+  <rect x="918" y="575" width="100" height="34" rx="8" class="pin"/><text x="927" y="599" class="pinText">GPIO27</text>
+  <rect x="918" y="625" width="100" height="34" rx="8" class="pin"/><text x="941" y="649" class="pinText">GND</text>
+
+  <!-- TFT -->
+  <rect x="80" y="205" width="360" height="445" rx="26" class="panel"/>
+  <rect x="115" y="245" width="290" height="340" rx="18" fill="#101924" stroke="#00e5ff" stroke-width="4"/>
+  <text x="145" y="300" class="title" font-size="32" fill="#00e5ff">POWER METER</text>
+  <rect x="145" y="335" width="220" height="55" rx="10" fill="none" stroke="#ffe100" stroke-width="4"/>
+  <text x="165" y="371" class="text" font-size="22" fill="#ffe100">VOLTAGE</text>
+  <rect x="145" y="410" width="220" height="55" rx="10" fill="none" stroke="#ff9800" stroke-width="4"/>
+  <text x="165" y="446" class="text" font-size="22" fill="#ff9800">CURRENT</text>
+  <rect x="145" y="485" width="220" height="55" rx="10" fill="none" stroke="#00e5ff" stroke-width="4"/>
+  <text x="165" y="521" class="text" font-size="22" fill="#00e5ff">POWER</text>
+  <text x="165" y="615" class="small" font-size="22">1.8 inch SPI TFT</text>
+
+  <rect x="405" y="240" width="90" height="30" rx="7" class="pin"/><text x="421" y="262" class="pinText">VCC</text>
+  <rect x="405" y="285" width="90" height="30" rx="7" class="pin"/><text x="421" y="307" class="pinText">GND</text>
+  <rect x="405" y="330" width="90" height="30" rx="7" class="pin"/><text x="431" y="352" class="pinText">CS</text>
+  <rect x="405" y="375" width="90" height="30" rx="7" class="pin"/><text x="429" y="397" class="pinText">A0</text>
+  <rect x="405" y="420" width="90" height="30" rx="7" class="pin"/><text x="414" y="442" class="pinText">RST</text>
+  <rect x="405" y="465" width="90" height="30" rx="7" class="pin"/><text x="420" y="487" class="pinText">SCK</text>
+  <rect x="405" y="510" width="90" height="30" rx="7" class="pin"/><text x="420" y="532" class="pinText">SDA</text>
+  <rect x="405" y="555" width="90" height="30" rx="7" class="pin"/><text x="419" y="577" class="pinText">LED</text>
+
+  <!-- PZEM -->
+  <rect x="1165" y="205" width="350" height="410" rx="26" class="panel"/>
+  <rect x="1210" y="250" width="260" height="120" rx="16" fill="#172331" stroke="#ff9800" stroke-width="4"/>
+  <text x="1239" y="307" class="title" font-size="32">PZEM-004T</text>
+  <text x="1228" y="343" class="small" font-size="22">AC Energy Meter</text>
+  <rect x="1110" y="295" width="90" height="30" rx="7" class="pin"/><text x="1132" y="317" class="pinText">5V</text>
+  <rect x="1110" y="340" width="90" height="30" rx="7" class="pin"/><text x="1126" y="362" class="pinText">GND</text>
+  <rect x="1110" y="385" width="90" height="30" rx="7" class="pin"/><text x="1132" y="407" class="pinText">TX</text>
+  <rect x="1110" y="430" width="90" height="30" rx="7" class="pin"/><text x="1132" y="452" class="pinText">RX</text>
+  <rect x="1220" y="430" width="240" height="52" rx="12" fill="#261b1b" stroke="#ff5252" stroke-width="3"/>
+  <text x="1240" y="464" class="danger">AC INPUT / LOAD SIDE</text>
+  <text x="1192" y="545" class="small" font-size="19">Use enclosure, fuse and insulated terminals.</text>
+  <text x="1192" y="574" class="small" font-size="19">AC mains wiring must be handled safely.</text>
+
+  <!-- Button -->
+  <rect x="1120" y="700" width="300" height="145" rx="26" class="panel"/>
+  <circle cx="1215" cy="772" r="40" fill="#26384a" stroke="#00e5ff" stroke-width="5"/>
+  <circle cx="1215" cy="772" r="22" fill="#00e5ff"/>
+  <text x="1280" y="765" class="title" font-size="28">Reset</text>
+  <text x="1280" y="795" class="small" font-size="20">kWh Button</text>
+  <rect x="1065" y="735" width="90" height="30" rx="7" class="pin"/><text x="1079" y="757" class="pinText">GPIO</text>
+  <rect x="1065" y="790" width="90" height="30" rx="7" class="pin"/><text x="1081" y="812" class="pinText">GND</text>
+
+  <!-- TFT wires -->
+  <path class="wire red" marker-start="url(#dotRed)" marker-end="url(#dotRed)" d="M582 267 C540 267 535 255 495 255"/>
+  <text x="515" y="238" class="wireText">3.3V</text>
+  <path class="wire gray" marker-start="url(#dotGray)" marker-end="url(#dotGray)" d="M582 317 C540 317 535 300 495 300"/>
+  <text x="512" y="345" class="wireText">GND</text>
+  <path class="wire yellow" marker-start="url(#dotYellow)" marker-end="url(#dotYellow)" d="M582 367 C535 367 535 345 495 345"/>
+  <text x="510" y="390" class="wireText">CS</text>
+  <path class="wire blue" marker-start="url(#dotCyan)" marker-end="url(#dotCyan)" d="M582 417 C535 417 535 390 495 390"/>
+  <text x="510" y="432" class="wireText">A0/DC</text>
+  <path class="wire orange" marker-start="url(#dotOrange)" marker-end="url(#dotOrange)" d="M582 467 C535 467 535 435 495 435"/>
+  <text x="510" y="478" class="wireText">RESET</text>
+  <path class="wire cyan" marker-start="url(#dotCyan)" marker-end="url(#dotCyan)" d="M582 517 C535 517 535 480 495 480"/>
+  <text x="510" y="525" class="wireText">SCK</text>
+  <path class="wire green" marker-start="url(#dotGreen)" marker-end="url(#dotGreen)" d="M582 567 C535 567 535 525 495 525"/>
+  <text x="510" y="570" class="wireText">SDA/MOSI</text>
+  <path class="wire red" marker-start="url(#dotRed)" marker-end="url(#dotRed)" d="M582 617 C535 617 535 570 495 570"/>
+  <text x="510" y="620" class="wireText">LED</text>
+
+  <!-- PZEM wires -->
+  <path class="wire red" marker-start="url(#dotRed)" marker-end="url(#dotRed)" d="M1018 317 C1055 317 1068 310 1110 310"/>
+  <text x="1034" y="297" class="wireText">5V</text>
+  <path class="wire gray" marker-start="url(#dotGray)" marker-end="url(#dotGray)" d="M1018 367 C1058 367 1070 355 1110 355"/>
+  <text x="1034" y="395" class="wireText">GND</text>
+  <path class="wire cyan" marker-start="url(#dotCyan)" marker-end="url(#dotCyan)" d="M1018 417 C1060 417 1068 400 1110 400"/>
+  <text x="1028" y="445" class="wireText">GPIO16 RX2 ← TX</text>
+  <path class="wire orange" marker-start="url(#dotOrange)" marker-end="url(#dotOrange)" d="M1018 467 C1060 467 1068 445 1110 445"/>
+  <text x="1028" y="500" class="wireText">GPIO17 TX2 → RX</text>
+
+  <!-- Button wires -->
+  <path class="wire cyan" marker-start="url(#dotCyan)" marker-end="url(#dotCyan)" d="M1018 592 C1045 592 1040 750 1065 750"/>
+  <text x="958" y="716" class="wireText">GPIO27</text>
+  <path class="wire gray" marker-start="url(#dotGray)" marker-end="url(#dotGray)" d="M1018 642 C1045 642 1040 805 1065 805"/>
+  <text x="985" y="845" class="wireText">GND</text>
+
+  <!-- AC warning footer -->
+  <rect x="80" y="875" width="1435" height="72" rx="18" fill="#201514" stroke="#ff6b5f" stroke-width="3"/>
+  <text x="112" y="920" class="danger">SAFETY:</text>
+  <text x="218" y="920" class="text" font-size="23">PZEM-004T connects to AC mains. Use proper insulation, fuse, enclosure, and qualified help for mains wiring.</text>
+</svg>

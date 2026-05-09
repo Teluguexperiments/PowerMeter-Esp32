@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="920" viewBox="0 0 1600 920">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .title { fill: #111111; font-family: Arial, Helvetica, sans-serif; font-size: 58px; font-weight: 900; letter-spacing: 1px; }
+      .brand { fill: #008bd2; font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 900; font-style: italic; }
+      .subtitle { fill: #111111; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 800; }
+      .label { fill: #111111; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 900; }
+      .small { fill: #222222; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; }
+      .tiny { fill: #222222; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; }
+      .pinText { fill: #111111; font-family: Consolas, monospace; font-size: 17px; font-weight: 900; }
+      .mapText { fill: #222222; font-family: Consolas, monospace; font-size: 26px; font-weight: 800; }
+      .redWire { fill: none; stroke: #f01818; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .blueWire { fill: none; stroke: #064fca; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .yellowWire { fill: none; stroke: #ffb000; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .orangeWire { fill: none; stroke: #ff6b1a; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .blackWire { fill: none; stroke: #111111; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .greenWire { fill: none; stroke: #00a850; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .cyanWire { fill: none; stroke: #00aeea; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .grayWire { fill: none; stroke: #777777; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .board { fill: #22b85a; stroke: #0c7e34; stroke-width: 3; }
+      .module { fill: #f8f8f8; stroke: #111111; stroke-width: 3; }
+      .esp { fill: #101820; stroke: #111111; stroke-width: 4; }
+      .hole { fill: #ffffff; stroke: #777777; stroke-width: 3; }
+      .pin { fill: #ffffff; stroke: #111111; stroke-width: 2; }
+      .terminal { fill: #dadada; stroke: #666666; stroke-width: 3; }
+    </style>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f01818"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#064fca"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1600" height="920"/>
+
+  <text x="36" y="62" class="brand">Telugu experiments</text>
+  <text x="36" y="90" class="tiny">THINK BEYOND BOUNDARY</text>
+  <text x="430" y="85" class="title">PZEM-004T-100A</text>
+  <text x="1030" y="54" class="mapText">PZEM-004T  ==  ESP32</text>
+  <text x="1030" y="92" class="mapText">5V         ==  5V</text>
+  <text x="1030" y="130" class="mapText">GND        ==  GND</text>
+  <text x="1030" y="168" class="mapText">TX         ==  GPIO16 / RX2</text>
+  <text x="1030" y="206" class="mapText">RX         ==  GPIO17 / TX2</text>
+
+  <!-- AC load and mains lines -->
+  <text x="50" y="205" class="label">load</text>
+  <circle cx="178" cy="165" r="35" fill="#ffe04d" stroke="#d8a400" stroke-width="4"/>
+  <rect x="162" y="198" width="32" height="54" rx="10" fill="#404040"/>
+  <line x1="152" y1="212" x2="204" y2="212" stroke="#222" stroke-width="5"/>
+  <line x1="158" y1="228" x2="198" y2="228" stroke="#222" stroke-width="5"/>
+  <path d="M175 130 C150 164 207 164 181 130" fill="none" stroke="#ffffff" stroke-width="4"/>
+
+  <path class="redWire" marker-end="url(#arrowRed)" d="M220 172 H790"/>
+  <text x="830" y="193" class="label" fill="#f01818">L</text>
+  <path class="blueWire" marker-end="url(#arrowBlue)" d="M142 248 V725 H785"/>
+  <text x="830" y="745" class="label" fill="#064fca">N</text>
+
+  <!-- CT clamp -->
+  <rect x="42" y="390" width="220" height="135" fill="#ffffff" stroke="#111111" stroke-width="8"/>
+  <line x1="84" y1="405" x2="84" y2="510" stroke="#111111" stroke-width="8"/>
+  <line x1="132" y1="405" x2="132" y2="510" stroke="#111111" stroke-width="8"/>
+  <line x1="180" y1="405" x2="180" y2="510" stroke="#111111" stroke-width="8"/>
+  <line x1="228" y1="405" x2="228" y2="510" stroke="#111111" stroke-width="8"/>
+  <text x="51" y="585" class="label">CT</text>
+  <path class="redWire" d="M220 172 V440 C220 455 220 470 262 470"/>
+  <path class="blueWire" d="M220 725 V500 C220 485 220 470 262 470"/>
+
+  <!-- PZEM board -->
+  <rect x="325" y="345" width="595" height="240" rx="12" class="board"/>
+  <circle cx="350" cy="370" r="13" fill="#d8ffe4" stroke="#0c7e34" stroke-width="3"/>
+  <circle cx="350" cy="560" r="13" fill="#d8ffe4" stroke="#0c7e34" stroke-width="3"/>
+  <circle cx="895" cy="370" r="13" fill="#d8ffe4" stroke="#0c7e34" stroke-width="3"/>
+  <circle cx="895" cy="560" r="13" fill="#d8ffe4" stroke="#0c7e34" stroke-width="3"/>
+
+  <rect x="356" y="395" width="60" height="150" rx="8" class="terminal"/>
+  <circle cx="386" cy="420" r="12" fill="#aaaaaa" stroke="#666666" stroke-width="3"/>
+  <circle cx="386" cy="460" r="12" fill="#aaaaaa" stroke="#666666" stroke-width="3"/>
+  <circle cx="386" cy="500" r="12" fill="#aaaaaa" stroke="#666666" stroke-width="3"/>
+  <circle cx="386" cy="540" r="12" fill="#aaaaaa" stroke="#666666" stroke-width="3"/>
+
+  <rect x="470" y="372" width="190" height="165" rx="8" fill="#e5c84c" stroke="#b69a19" stroke-width="3"/>
+  <text x="495" y="430" class="small">AC Relay</text>
+  <text x="490" y="465" class="tiny">PZEM-004T</text>
+  <circle cx="695" cy="455" r="48" fill="#1fa84e" stroke="#0d7130" stroke-width="4"/>
+  <text x="670" y="447" class="small">Q.C.</text>
+  <text x="665" y="475" class="small">Pass</text>
+  <circle cx="805" cy="520" r="30" fill="#2d2d2d" stroke="#777" stroke-width="3"/>
+  <text x="787" y="526" fill="#ffffff" font-family="Arial" font-size="18" font-weight="900">10A</text>
+
+  <rect x="890" y="380" width="80" height="118" rx="7" fill="#efefef" stroke="#999999" stroke-width="2"/>
+  <text x="935" y="395" class="pinText" fill="#f01818">5V</text>
+  <text x="928" y="425" class="pinText">RX</text>
+  <text x="928" y="455" class="pinText" fill="#ff6b1a">TX</text>
+  <text x="920" y="485" class="pinText">GND</text>
+  <circle cx="910" cy="392" r="7" fill="#f01818"/>
+  <circle cx="910" cy="422" r="7" fill="#ffb000"/>
+  <circle cx="910" cy="452" r="7" fill="#ff6b1a"/>
+  <circle cx="910" cy="482" r="7" fill="#111111"/>
+
+  <text x="330" y="628" class="small">PZEM-004T AC metering module</text>
+
+  <!-- ESP32 board -->
+  <rect x="1120" y="250" width="325" height="520" rx="28" class="esp"/>
+  <circle cx="1145" cy="280" r="14" class="hole"/>
+  <circle cx="1420" cy="280" r="14" class="hole"/>
+  <circle cx="1145" cy="738" r="14" class="hole"/>
+  <circle cx="1420" cy="738" r="14" class="hole"/>
+  <rect x="1210" y="280" width="140" height="125" rx="8" class="module"/>
+  <rect x="1242" y="300" width="76" height="32" fill="none" stroke="#dfba2d" stroke-width="6"/>
+  <path d="M1242 300 V335 M1260 300 V335 M1278 300 V335 M1296 300 V335 M1318 300 H1350" stroke="#dfba2d" stroke-width="6" fill="none"/>
+  <text x="1248" y="372" class="tiny">ESP32</text>
+  <rect x="1235" y="720" width="90" height="35" rx="6" fill="#dadada" stroke="#888888" stroke-width="3"/>
+  <text x="1260" y="744" class="tiny">USB</text>
+  <text x="1220" y="690" fill="#ffffff" font-family="Arial" font-size="24" font-weight="900">ESP32 DEVKIT</text>
+
+  <!-- ESP32 right pin list -->
+  <g>
+    <circle cx="1410" cy="340" r="8" class="pin"/><text x="1370" y="347" class="pinText">5V</text>
+    <circle cx="1410" cy="378" r="8" class="pin"/><text x="1360" y="385" class="pinText">GND</text>
+    <circle cx="1410" cy="416" r="8" class="pin"/><text x="1342" y="423" class="pinText">GPIO16</text>
+    <circle cx="1410" cy="454" r="8" class="pin"/><text x="1342" y="461" class="pinText">GPIO17</text>
+    <circle cx="1410" cy="492" r="8" class="pin"/><text x="1342" y="499" class="pinText">GPIO27</text>
+    <circle cx="1410" cy="530" r="8" class="pin"/><text x="1360" y="537" class="pinText">GND</text>
+  </g>
+  <g>
+    <circle cx="1155" cy="340" r="8" class="pin"/><text x="1170" y="347" class="pinText">3V3</text>
+    <circle cx="1155" cy="378" r="8" class="pin"/><text x="1170" y="385" class="pinText">GND</text>
+    <circle cx="1155" cy="416" r="8" class="pin"/><text x="1170" y="423" class="pinText">GPIO5</text>
+    <circle cx="1155" cy="454" r="8" class="pin"/><text x="1170" y="461" class="pinText">GPIO21</text>
+    <circle cx="1155" cy="492" r="8" class="pin"/><text x="1170" y="499" class="pinText">GPIO22</text>
+    <circle cx="1155" cy="530" r="8" class="pin"/><text x="1170" y="537" class="pinText">GPIO18</text>
+    <circle cx="1155" cy="568" r="8" class="pin"/><text x="1170" y="575" class="pinText">GPIO23</text>
+    <circle cx="1155" cy="606" r="8" class="pin"/><text x="1170" y="613" class="pinText">GPIO32</text>
+  </g>
+
+  <!-- PZEM to ESP32 wires -->
+  <path class="blackWire" d="M910 482 H1005 V378 H1410"/>
+  <path class="redWire" d="M910 392 H985 V340 H1410"/>
+  <path class="yellowWire" d="M910 422 H1015 V416 H1410"/>
+  <path class="orangeWire" d="M910 452 H1038 V454 H1410"/>
+
+  <!-- TFT mini module -->
+  <rect x="1045" y="805" width="250" height="85" rx="12" fill="#172232" stroke="#00aeea" stroke-width="3"/>
+  <text x="1065" y="838" fill="#00aeea" font-family="Arial" font-size="24" font-weight="900">1.8 TFT DISPLAY</text>
+  <text x="1065" y="870" class="tiny" fill="#ffffff">LED SCK SDA A0 RESET CS GND VCC</text>
+  <path class="redWire" d="M1155 340 H1075 V805"/>
+  <path class="blackWire" d="M1155 378 H1095 V805"/>
+  <path class="yellowWire" d="M1155 416 H1115 V805"/>
+  <path class="cyanWire" d="M1155 454 H1135 V805"/>
+  <path class="grayWire" d="M1155 492 H1155 V805"/>
+  <path class="greenWire" d="M1155 530 H1175 V805"/>
+  <path class="orangeWire" d="M1155 568 H1195 V805"/>
+  <path class="redWire" d="M1155 606 H1215 V805"/>
+
+  <!-- Reset button -->
+  <circle cx="1490" cy="615" r="34" fill="#eeeeee" stroke="#111111" stroke-width="5"/>
+  <circle cx="1490" cy="615" r="17" fill="#00aeea"/>
+  <text x="1450" y="680" class="small">Reset kWh</text>
+  <path class="cyanWire" d="M1410 492 H1490 V581"/>
+  <path class="blackWire" d="M1410 530 H1540 V615 H1524"/>
+
+  <!-- TFT mapping -->
+  <text x="50" y="807" class="mapText">TFT: VCC=3V3, GND=GND, CS=GPIO5, A0=GPIO21, RESET=GPIO22, SCK=GPIO18, SDA=GPIO23, LED=GPIO32</text>
+  <text x="50" y="850" class="mapText">Button: GPIO27 to GND</text>
+  <text x="50" y="892" fill="#d71920" font-family="Arial" font-size="28" font-weight="900">WARNING: AC mains is dangerous. Use insulated terminals, fuse, enclosure, and qualified help.</text>
+</svg>

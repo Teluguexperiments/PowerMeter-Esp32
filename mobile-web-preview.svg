@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" fill="none">
+  <rect width="390" height="844" rx="34" fill="#05070a"/>
+  <rect x="14" y="14" width="362" height="816" rx="26" fill="#101418"/>
+
+  <text x="32" y="52" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="22" font-weight="700">Telugu experiments</text>
+  <text x="32" y="73" fill="#aab4bd" font-family="Arial, sans-serif" font-size="13">Power Meter</text>
+  <rect x="292" y="39" width="58" height="28" rx="14" fill="#1f2a33"/>
+  <text x="309" y="58" fill="#8ee6a2" font-family="Arial, sans-serif" font-size="12" font-weight="700">LIVE</text>
+
+  <rect x="32" y="92" width="153" height="112" rx="8" fill="#171e25" stroke="#2b3640"/>
+  <text x="48" y="124" fill="#aab4bd" font-family="Arial, sans-serif" font-size="13">Voltage</text>
+  <text x="48" y="169" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="31" font-weight="700">230.4</text>
+  <text x="139" y="169" fill="#aab4bd" font-family="Arial, sans-serif" font-size="15">V</text>
+
+  <rect x="205" y="92" width="153" height="112" rx="8" fill="#171e25" stroke="#2b3640"/>
+  <text x="221" y="124" fill="#aab4bd" font-family="Arial, sans-serif" font-size="13">Current</text>
+  <text x="221" y="169" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="31" font-weight="700">1.284</text>
+  <text x="313" y="169" fill="#aab4bd" font-family="Arial, sans-serif" font-size="15">A</text>
+
+  <rect x="32" y="220" width="153" height="112" rx="8" fill="#171e25" stroke="#2b3640"/>
+  <text x="48" y="252" fill="#aab4bd" font-family="Arial, sans-serif" font-size="13">Power</text>
+  <text x="48" y="297" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="31" font-weight="700">295.8</text>
+  <text x="139" y="297" fill="#aab4bd" font-family="Arial, sans-serif" font-size="15">W</text>
+
+  <rect x="205" y="220" width="153" height="112" rx="8" fill="#171e25" stroke="#2b3640"/>
+  <text x="221" y="252" fill="#aab4bd" font-family="Arial, sans-serif" font-size="13">Units</text>
+  <text x="221" y="297" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="31" font-weight="700">0.742</text>
+  <text x="313" y="297" fill="#aab4bd" font-family="Arial, sans-serif" font-size="15">kWh</text>
+
+  <rect x="32" y="348" width="326" height="112" rx="8" fill="#171e25" stroke="#2b3640"/>
+  <text x="48" y="380" fill="#aab4bd" font-family="Arial, sans-serif" font-size="13">Frequency / Power factor</text>
+  <text x="48" y="425" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="31" font-weight="700">50.0</text>
+  <text x="123" y="425" fill="#aab4bd" font-family="Arial, sans-serif" font-size="15">Hz</text>
+  <text x="170" y="425" fill="#f6f7f8" font-family="Arial, sans-serif" font-size="31" font-weight="700">PF 0.98</text>
+
+  <rect x="32" y="486" width="326" height="52" rx="8" fill="#e25544"/>
+  <text x="121" y="519" fill="#ffffff" font-family="Arial, sans-serif" font-size="15" font-weight="700">Reset kWh Energy</text>
+
+  <text x="32" y="572" fill="#76838f" font-family="Arial, sans-serif" font-size="12">Updated 8:35:12 PM</text>
+  <text x="32" y="606" fill="#76838f" font-family="Arial, sans-serif" font-size="12">Phone connects to ESP32-Power-Meter WiFi</text>
+  <text x="32" y="624" fill="#76838f" font-family="Arial, sans-serif" font-size="12">Open http://192.168.4.1</text>
+</svg>
